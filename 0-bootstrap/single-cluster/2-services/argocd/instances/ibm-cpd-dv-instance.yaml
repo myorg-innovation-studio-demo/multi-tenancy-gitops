@@ -33,3 +33,5 @@ spec:
         value: 1.7.8
       - name: spec.size
         value: small
+      - name: spec.storageClass
+        value: "managed-nfs-storage"
