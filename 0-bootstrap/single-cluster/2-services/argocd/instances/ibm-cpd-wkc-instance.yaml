@@ -37,8 +37,9 @@ spec:
         value: "true"
       - name: spec.iis_db2u_set_kernel_params
         value: "true"
-  startupProbe:
-    tcpSocket:
-      port: 3000
-    failureThreshold: 30
-    periodSeconds: 10
+  containers:
+    startupProbe:
+      tcpSocket:
+        port: 3000
+      failureThreshold: 30
+      periodSeconds: 10
